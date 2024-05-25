@@ -1,0 +1,108 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("./img/main.webp");
+    overflow-x: hidden;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    gap: 10px;
+    padding: 10px;
+    width: 100%; /* Ensure the grid container takes full width */
+    max-width: 600px; /* Set a max width if necessary to prevent overflow */
+    height: 100vh;
+    overflow-y: scroll; /* Allow vertical scrolling */
+     
+}
+
+.grid-item {
+    width: 100%;
+    padding-top: 200%; /* 1:1 Aspect Ratio */
+    position: relative;
+}
+
+.grid-item2 {
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 10px;
+}
+
+.grid-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item2 span {
+    font-family: 'The Girl Next Door', cursive;
+    font-weight: 200;
+    font-style: normal;
+    text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.footer{
+    position: relative;
+    width: 105%; /* Adjust this width as needed */
+    height: 1260px; /* Adjust this height as needed */
+    overflow: hidden;
+
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./img/bottom.jpeg"); /* Specify your image URL here */
+    background-size: contain;
+    z-index: -1;
+  }
+ 
+
+.footer pre{
+    white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding-left: 20px;
+  padding-right: 20px;
+    padding-top: 100px;
+    font-family: 'The Girl Next Door', cursive;
+    font-weight: 200;
+    font-style: normal;
+    color: white;
+    text-shadow: 1px 0 0 rgb(236, 12, 116), -1px 0 0 rgb(242, 28, 185), 0 1px 0 rgb(244, 13, 13), 0 -1px 0 rgb(238, 229, 229), 1px 1px 0 rgb(220, 13, 113), -1px -1px 0 rgb(240, 17, 170), 1px -1px 0 
+}
+
+.last {
+    margin-top: -20px;
+    width: 105vw;
+    height: 400px;
+    background-image: url("./img/purpose.avif");
+    background-size: contain;
+background-repeat: no-repeat;
+}
+
+.last p{
+    position: relative;
+  bottom: -400px;
+  left: 0;
+  
+  width: 100%;
+  text-align: center; /* Adjust alignment as needed */
+  color: white; /* Adjust text color as needed */
+  padding: 10px; /* Adjust padding as needed */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-shadow: 1px 0 0 rgb(236, 12, 116), -1px 0 0 rgb(242, 28, 185), 0 1px 0 rgb(244, 13, 13), 0 -1px 0 rgb(238, 229, 229), 1px 1px 0 rgb(220, 13, 113), -1px -1px 0 rgb(240, 17, 170), 1px -1px 0 
+}
